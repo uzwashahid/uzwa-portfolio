@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect — Uzwa Shahid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Uzwa</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Story</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Connect</a></li>
+      </ul>
+      <button class="moon-toggle" title="double-click me">🌙</button>
+      <a href="contact.html" class="nav-cta">Say Hi</a>
+    </div>
+  </nav>
+
+  <section class="page-hero reveal-up">
+    <span class="chapter-tag">Chapter 08</span>
+    <h1>Let's Write The Next <em>Chapter</em> Together</h1>
+    <p>Whether it's a project idea, an opportunity, or you just want to say hi — my inbox is always open.</p>
+  </section>
+
+  <section class="section reveal-scale" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: start;">
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <div>
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div>
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you have in mind..." required></textarea>
+      </div>
+      <p class="form-note">This form is a template for now — connect it to Formspree or EmailJS to make it actually send.</p>
+      <button type="submit" class="btn btn-primary" style="justify-self: start;">Send message ♡</button>
+    </form>
+
+    <div class="card">
+      <span class="icon">🌷</span>
+      <h3>Find me elsewhere</h3>
+      <p>Resume, code, and professional profiles — all in one place.</p>
+      <!-- Add your resume.pdf into the assets folder for this link to work -->
+      <a href="assets/resume.pdf" target="_blank" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Download Resume</a>
+      <div class="social-icons" style="justify-content: flex-start; margin-top: 1.5rem;">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">💻</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a>
+        <a href="mailto:hello@example.com" aria-label="Email">✉️</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal-up">
+    <div class="letter-box">
+      <p>Dear Reader,</p>
+      <p style="margin-top: 1rem;">Thank you for taking the time to read a few pages of my journey. Every project here represents a lesson learned, a challenge overcome, and a step toward becoming the engineer I aspire to be.</p>
+      <p style="margin-top: 1rem;">I hope this isn't the last page we share.</p>
+      <span class="sign-off">— Uzwa ♡</span>
+    </div>
+  </section>
+
+  <section class="section reveal-scale">
+    <div class="beyond-coding">
+      <h5>Beyond Coding</h5>
+      <p>When I'm away from my laptop, I enjoy documenting little moments, photography, coffee, and everyday life.</p>
+      <a href="https://www.instagram.com/uzwaz_png?igsh=MWxrdjAwcHQ3d3BneA==" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+    </div>
+  </section>
+
+  <footer>
+    Every chapter here represents another step in my journey as a developer.<br>
+    Thank you for reading my story. <span class="heart">—</span> Uzwa
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert("Thanks for reaching out! (Connect this form to Formspree or EmailJS to actually receive messages.)");
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>

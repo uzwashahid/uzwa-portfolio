@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Uzwa Shahid</title>
+  <meta name="description" content="Featured C++, SFML, and Web projects by Uzwa Shahid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <nav class="navbar">
+    <a href="index.html#landing" class="logo">Uzwa</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#story" class="nav-link">Story</a></li>
+        <li><a href="index.html#journey" class="nav-link">Journey</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#connect" class="nav-link">Connect</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <section id="projects" class="section reveal-up" style="padding-top: 7rem;">
+    <span class="chapter-tag">Chapter 03</span>
+    <h2 class="section-title">Featured <em>Projects</em></h2>
+    <p class="section-subtitle">Click any postcard to view video preview and project challenge details.</p>
+
+    <div class="projects-scatter">
+
+      <!-- Project 1 -->
+      <div class="notebook-card postcard" 
+           data-title="Flappy Bird — Uzwa Edition"
+           data-badge="Self Project"
+           data-badge-class="solo"
+           data-video="assets/flappybird.mp4"
+           data-description="A custom recreation of the classic Flappy Bird game, built from scratch in C++ using SFML."
+           data-challenge="Getting collision detection and smooth gameplay physics to feel right took a lot of trial and error.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open Flappy Bird details">
+          <img src="assets/flappybird-uzwa-edition.png" alt="Flappy Bird Uzwa Edition screenshot" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge solo">Self Project</span>
+          <h3>Flappy Bird — Uzwa Edition</h3>
+          <div class="tags"><span class="tag">C++</span><span class="tag">SFML</span><span class="tag">Game Dev</span></div>
+          <div class="project-actions">
+            <a class="gh-link" href="https://github.com/uzwashahid/FlappyBirdUzwaEdition" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="notebook-card postcard"
+           data-title="CGPA Calculator"
+           data-badge="Self Project"
+           data-badge-class="solo"
+           data-video="assets/CgpaCalculator.mp4"
+           data-description="A desktop tool built with C++ and SFML that calculates semester GPA and overall CGPA, with save/load support."
+           data-challenge="Handling save/load of course data correctly without corrupting previous records during session reloads.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open CGPA Calculator details">
+          <img src="assets/cgpa-calculator.png" alt="CGPA Calculator screenshot" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge solo">Self Project</span>
+          <h3>CGPA Calculator</h3>
+          <div class="tags"><span class="tag">C++</span><span class="tag">SFML</span><span class="tag">GUI</span></div>
+          <div class="project-actions">
+            <a class="gh-link" href="https://github.com/uzwashahid/CGPA-Calculator" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="notebook-card postcard"
+           data-title="ChessForge"
+           data-badge="Group Project"
+           data-badge-class="group"
+           data-video="assets/chess.mp4"
+           data-description="A fully playable chess game built in C++ using object-oriented programming concepts, built collaboratively with a team."
+           data-challenge="Move validation — making sure every rule (check, checkmate, special moves) was handled correctly across complex states.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open ChessForge details">
+          <img src="assets/chessforge.png" alt="ChessForge screenshot" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge group">Group Project</span>
+          <h3>ChessForge</h3>
+          <div class="tags"><span class="tag">C++</span><span class="tag">OOP</span><span class="tag">SFML</span></div>
+          <div class="project-actions">
+            <a class="gh-link" href="https://github.com/Usman-0515/ChessForge" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="notebook-card postcard"
+           data-title="Digital Clock (DLD Project)"
+           data-badge="Group Project"
+           data-badge-class="group"
+           data-video="assets/digitalclock.mp4"
+           data-description="A hardware digital logic design project — a working digital clock built entirely on breadboards using ICs and seven-segment displays."
+           data-challenge="Keeping the counters synchronized across all six digits without timing glitches or circuit bounce.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open Digital Clock details">
+          <img src="assets/digital-clock.png" alt="Digital clock hardware project photo" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge group">Group Project</span>
+          <h3>Digital Clock (DLD Project)</h3>
+          <div class="tags"><span class="tag">DLD</span><span class="tag">Hardware</span></div>
+          <div class="project-actions"></div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="notebook-card postcard"
+           data-title="Console Quiz Game"
+           data-badge="Group Project"
+           data-badge-class="group"
+           data-video="assets/quiz-game.mp4"
+           data-description="A console-based quiz game in C++ with multiple categories, difficulty levels, and a leaderboard — a first-semester team project."
+           data-challenge="Managing categories, difficulty, and a leaderboard without allowing complex nested conditions to turn into monolithic code.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open Console Quiz Game details">
+          <img src="assets/quiz-game.png" alt="Console quiz game screenshot" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge group">Group Project</span>
+          <h3>Console Quiz Game</h3>
+          <div class="tags"><span class="tag">C++</span><span class="tag">Console App</span></div>
+          <div class="project-actions">
+            <a class="gh-link" href="https://github.com/uzwashahid/PF-Project-Semester-1-QUIZ-GAME" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="notebook-card postcard"
+           data-title="ANU Travels — Website"
+           data-badge="Group Project"
+           data-badge-class="group"
+           data-video="assets/anutravels.mp4"
+           data-description="A full travel agency website built for an ICT group project, covering a home page, packages, and booking — built with three teammates."
+           data-challenge="Keeping the design consistent across pages while splitting the frontend workflow effectively between three teammates.">
+        <span class="postcard-tape" aria-hidden="true"></span>
+        <div class="project-thumb-wrap" tabindex="0" role="button" aria-label="Open ANU Travels details">
+          <img src="assets/anu-travels.png" alt="ANU Travels website screenshot" class="project-thumb">
+          <span class="play-overlay">▶</span>
+        </div>
+        <div class="card-compact-body">
+          <span class="project-badge group">Group Project</span>
+          <h3>ANU Travels — Website</h3>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="project-actions">
+            <a class="demo-link" href="https://ali-hassan389.github.io/ANU-Travels-Official/Home-Page/index.html" target="_blank" rel="noopener">Live Demo →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    Every chapter here represents another step in my journey as a developer.<br>
+    Thank you for reading my story. — Uzwa
+  </footer>
+
+  <!-- ================= SCRAPBOOK PROJECT MODAL ================= -->
+  <div class="scrapbook-modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card notebook-card">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <span class="postcard-tape modal-tape" aria-hidden="true"></span>
+      
+      <div class="modal-header">
+        <span class="project-badge" id="modalBadge">Self Project</span>
+        <h3 id="modalTitle">Project Title</h3>
+      </div>
+
+      <div class="modal-media">
+        <video id="modalVideo" controls playsinline></video>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-challenge-box">
+          <strong>⚡ Challenge</strong>
+          <p id="modalChallenge"></p>
+        </div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
