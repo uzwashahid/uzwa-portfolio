@@ -240,8 +240,8 @@ body.dark-mode .navbar { background: rgba(32, 28, 25, 0.88); }
 /* ---- photo, doodle ring, tiny floating doodles ---- */
 .landing-photo-wrap {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .doodle-ring {
